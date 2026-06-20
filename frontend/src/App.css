@@ -1,0 +1,146 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(31, 39, 51, 0.08);
+  padding: 32px;
+}
+
+.card-header {
+  margin-bottom: 24px;
+}
+
+.card-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #1f2733;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #d7dce3;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.add-form input:focus {
+  border-color: #3d5a80;
+}
+
+.add-form button {
+  padding: 12px 18px;
+  background: #3d5a80;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.add-form button:hover {
+  background: #2f4762;
+}
+
+.error {
+  background: #fdecec;
+  color: #b3261e;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #9aa3af;
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6px;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.todo-list li:hover {
+  background: #f5f7fa;
+}
+
+.todo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3d5a80;
+  cursor: pointer;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #1f2733;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: #9aa3af;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c1c7d0;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.delete-btn:hover {
+  color: #b3261e;
+  background: #fdecec;
+}
