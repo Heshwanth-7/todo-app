@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 // Backend API base URL — matches the port our Express server listens on
-const API_URL = "http://localhost:5050/api/todos";
+const API_URL = "https://todo-app-t166.onrender.com/api/todos";
 
 function App() {
   const [todos, setTodos] = useState([]);
